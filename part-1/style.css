@@ -1,0 +1,20 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    font-weight: bold;
+}
+.second-title{
+    color: blue;
+}
+.content{
+    background-color: whitesmoke;
+    padding: 30px;
+    margin: 100px;
+}
+
+footer{
+    background-color: red;
+
+}

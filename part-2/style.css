@@ -1,0 +1,31 @@
+.first-title{
+    color:red;
+
+}
+.title{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    font-weight: bold;
+}
+.second-title{
+    color: blue;
+}
+.content{
+    background-color: whitesmoke;
+    padding: 30px;
+    margin: 100px;
+}
+
+.footer{
+    align-items: center;
+    background-color: blue;
+    color: white;
+    
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
