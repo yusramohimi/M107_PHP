@@ -18,7 +18,7 @@
     // pour avoir la d'un indice specifique
     echo $stagiaires[0]  . '<br>';
 
-
+    
     // les tableaux associatifs
     $nombresTest = [0 => 12 , 1 => 34 , 2 => 40];
     echo $nombresTest[0]  . '<br>';
