@@ -39,6 +39,12 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 <input type="hidden" name="_method" value="delete">
                 <input type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" value="Supprimer">
             </form>
+            <form action="modifier_post.php" method="POST">
+                <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+                <input type="hidden" name="_method" value="update">
+                <input type="submit"  class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" value="Modifier">
+
+            </form>
 
         </article>
     </div>

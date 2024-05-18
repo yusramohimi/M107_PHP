@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Beauty Haven</h1>
+        <button class="btn-afficher-form "><i class="fa-solid fa-plus"></i> Add Product</button>
+    </header>
+    <div class="container">
+        <form>
+           <h3 class="form-title">ADD PRODUCT</h3>
+           <div class="input-section">
+            <label for="Code">Code</label>
+            <input type="text" id="code" name="code">
+           </div> 
+            <div class="input-section">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter product name">
+            </div>
+            <div class="input-section">
+                <label for="categorie">Category</label>
+                <select name="category" id="category"></select>
+            </div>
+            <div class="input-section">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" >
+            </div>
+            <div class="input-section">
+                <label for="Price">Price</label>
+                <input type="text" name="price" id="price" placeholder="Enter the price">
+            </div>
+            <div class="input-section">
+                <label for="quantite">Quantity</label>
+                <input type="number" id="quantity" placeholder="Enter the quantity">
+            </div>
+            <div class="btn-section">
+                <button type="submit" id="save">SAVE</button>
+                <button type="submit" id="add">ADD</button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="panier-container">
+       <h3 class="panier-title">Panier d'achats</h3>
+        <table id="achats-table" class="table table-bordered">
+            <thead>
+            <tr class="table-head-row">
+                <th scope="col">Code</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Description</th>
+                <th scope="col">Catégorie</th>
+                <th scope="col">quantité</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody id="tdata">
+                
+            </tbody>
+        </table>
+
+        <div class="zone-prix">
+            <h5>Prix total HT : <span id="prix-total-ht">0</span> <span>DH</span></h5>
+            <h5>Prix total TTC : <span id="prix-total-ttc">0</span> <span>DH</span></h5>
+        </div>
+        
+        
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

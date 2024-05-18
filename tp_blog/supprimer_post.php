@@ -1,6 +1,7 @@
 <?php
 // supprimer
-if($_SERVER['REQUEST_METHOD'] == "POST" && $_POST['_method'] ==='delete'){
+$isValidDelete = $_SERVER['REQUEST_METHOD'] == "POST" &&  $_POST['_method'] ==='delete' && isset($_POST['id']);
+if($isValidDelete){
 
     require ('../PDO/database.php');
 
